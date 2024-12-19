@@ -84,16 +84,27 @@ function Get-ScriptBlockText {
     
     try {
         $messageXml = [xml]$Event.ToXml()
-        $scriptBlockText = $messageXml.Event.EventData.Data | 
-            Where-Object { $_.Name -eq 'ScriptBlockText' } | 
-            Select-Object -ExpandProperty '#text'
+        $scriptBlockTextNode = $messageXml.Event.EventData.Data | 
+            Where-Object { $_.Name -eq 'ScriptBlockText' }
+        
+        if ($scriptBlockTextNode -eq $null) {
+            Write-Warning "ScriptBlockText node not found in event $($Event.RecordId)"
+            return $null
+        }
+        
+        $scriptBlockText = $scriptBlockTextNode.'#text'
+        
+        if ($scriptBlockText -eq $null) {
+            Write-Warning "ScriptBlockText is empty in event $($Event.RecordId)"
+            return $null
+        }
         
         return $scriptBlockText
     }
     catch {
         Write-Warning "Failed to extract ScriptBlock text from event $($Event.RecordId): $_"
         return $null
-    }
+    } 
 }
 
 function Analyze-Events {
