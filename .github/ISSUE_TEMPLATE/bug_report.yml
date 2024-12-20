@@ -1,0 +1,42 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Windows Version
+      description: What version of Windows are you running?
+      placeholder: e.g., Windows 10, Windows 11, Windows Server 2019, etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: audit
+    attributes:
+      label: Audit Policy Status
+      description: Are the required audit policies enabled?
+      options:
+        - "Yes"
+        - "No"
+        - "Not Sure"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code.
+      render: powershell 

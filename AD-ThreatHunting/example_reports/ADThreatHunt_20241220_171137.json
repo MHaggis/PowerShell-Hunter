@@ -1,0 +1,485 @@
+{
+  "TimeRange": "12/20/2024 15:11:36 to 12/20/2024 17:11:37",
+  "TotalFailedLogins": 50,
+  "TotalLockouts": 0,
+  "PossiblePasswordSpray": [
+    {
+      "Count": 10,
+      "Time": "2024-12-20 16:45",
+      "Accounts": "THTest1, THTest2, THTest3, THTest4, THTest5"
+    },
+    {
+      "Count": 6,
+      "Time": "2024-12-20 16:51",
+      "Accounts": "THTest1, THTest2, THTest3"
+    },
+    {
+      "Count": 4,
+      "Time": "2024-12-20 16:52",
+      "Accounts": "THTest4, THTest5"
+    },
+    {
+      "Count": 30,
+      "Time": "2024-12-20 16:53",
+      "Accounts": "THTest, THTest1, THTest2, THTest3, THTest4, THTest5"
+    }
+  ],
+  "PossibleBruteForce": [
+    {
+      "Count": 20,
+      "Account": "THTest",
+      "LogonTypes": "Type Interactive, Type Network"
+    },
+    {
+      "Count": 6,
+      "Account": "THTest1",
+      "LogonTypes": "Type Interactive, Type Network"
+    },
+    {
+      "Count": 6,
+      "Account": "THTest2",
+      "LogonTypes": "Type Interactive, Type Network"
+    },
+    {
+      "Count": 6,
+      "Account": "THTest3",
+      "LogonTypes": "Type Interactive, Type Network"
+    },
+    {
+      "Count": 6,
+      "Account": "THTest4",
+      "LogonTypes": "Type Interactive, Type Network"
+    },
+    {
+      "Count": 6,
+      "Account": "THTest5",
+      "LogonTypes": "Type Interactive, Type Network"
+    }
+  ],
+  "TimingAnalysis": {
+    "HighestAttemptsIn5Min": 30,
+    "TimeWindowsWithHighActivity": {
+      "TimeWindow": "2024-12-20 16:53",
+      "Attempts": 30,
+      "UniqueAccounts": 6
+    },
+    "TotalDuration": -8.05,
+    "AttemptsPerMinute": -6.21,
+    "EndTime": "2024-12-20 16:53",
+    "StartTime": "2024-12-20 16:45"
+  },
+  "FailedLoginSummary": [
+    {
+      "LogonType": "Type ",
+      "Count": 25
+    },
+    {
+      "LogonType": "Type ",
+      "Count": 25
+    }
+  ],
+  "DetailedFailedLogins": [
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:47.9755409+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:46.9464576+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:45.4244243+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:44.3988768+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:42.8507721+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:41.8365996+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:40.3025294+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:39.288583+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:37.7541307+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:36.7248265+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:35.205552+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:34.1916703+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:32.6573389+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:31.6434042+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:30.1250572+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:29.1109187+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:27.5922931+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:26.5783487+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:25.0443199+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:24.0309395+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:17.8994008+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest5",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:16.884269+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest5",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:15.85187+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest4",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:14.8371814+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest4",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:13.8193272+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest3",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:12.804477+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest3",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:11.7871691+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest2",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:10.7719606+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest2",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:53:09.7543462+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest1",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:53:08.7424759+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest1",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:52:03.1370141+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest5",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:52:02.1217993+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest5",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:52:01.0888984+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest4",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:52:00.0730844+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest4",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:51:59.0407938+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest3",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:51:58.0260691+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest3",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:51:57.0083023+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest2",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:51:56.0034716+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest2",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:51:54.9850416+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest1",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:51:53.9635184+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest1",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:45:54.1621428+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest5",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:45:53.1455937+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest5",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:45:52.1139485+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest4",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:45:51.0957969+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest4",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:45:50.0791608+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest3",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:45:49.0633196+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest3",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:45:48.0468682+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest2",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:45:47.0158063+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest2",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Network",
+      "TimeStamp": "2024-12-20T16:45:45.9987551+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest1",
+      "CallingComputer": "AR-WIN-DC"
+    },
+    {
+      "IPAddress": "-",
+      "LogonType": "Interactive",
+      "TimeStamp": "2024-12-20T16:45:44.9787395+00:00",
+      "ProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "TargetAccount": "THTest1",
+      "CallingComputer": "AR-WIN-DC"
+    }
+  ],
+  "DetailedLockouts": null,
+  "NoActivityFound": false
+}

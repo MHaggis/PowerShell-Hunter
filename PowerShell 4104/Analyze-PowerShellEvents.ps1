@@ -24,16 +24,37 @@ Maximum number of events to analyze. Default is 5000.
 
 .NOTES
 Author: The Haag
-Version: 1.3
+Version: 1.4
 #>
 
 param (
+    [Parameter()]
     [string]$PatternFile = "Patterns.csv",
+    [Parameter()]
     [string]$OutputFile = "",
+    [Parameter()]
     [ValidateSet('CSV', 'JSON')]
     [string]$OutputFormat = "CSV",
+    [Parameter()]
     [int]$MaxEvents = 5000
 )
+
+$AsciiArt = @"
+                                                                                
+######                               #####                                 #     #                                   
+#     #  ####  #    # ###### #####  #     # #    # ###### #      #         #     # #    # #    # ##### ###### #####  
+#     # #    # #    # #      #    # #       #    # #      #      #         #     # #    # ##   #   #   #      #    # 
+######  #    # #    # #####  #    #  #####  ###### #####  #      #         ####### #    # # #  #   #   #####  #    # 
+#       #    # # ## # #      #####        # #    # #      #      #         #     # #    # #  # #   #   #      #####  
+#       #    # ##  ## #      #   #  #     # #    # #      #      #         #     # #    # #   ##   #   #      #   #  
+#        ####  #    # ###### #    #  #####  #    # ###### ###### ######    #     #  ####  #    #   #   ###### #    # 
+                                                                                                                                    
+                        PowerShell-Hunter
+                    Hunt smarter, hunt harder
+                                                                                
+"@
+
+Write-Host $AsciiArt -ForegroundColor Cyan
 
 function Get-TimestampedFileName {
     param (
