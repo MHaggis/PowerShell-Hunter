@@ -124,3 +124,9 @@ The tool analyzes several key indicators:
 - Monitor resource usage on large domains
 - Consider network impact when using WinRM
 - Review audit policies for proper logging
+
+---
+
+<p align="center">
+Made with ❤️ by defenders for defenders
+</p>

@@ -127,3 +127,9 @@ Get-WinEvent -ListLog Security | Select-Object LogName, IsEnabled, LogMode
 ```
 
 **Warning**: Only clear the event log in test environments! 
+
+---
+
+<p align="center">
+Made with ❤️ by defenders for defenders
+</p>
