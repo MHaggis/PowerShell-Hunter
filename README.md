@@ -40,6 +40,33 @@ Key Features:
 
 ➡️ [Learn more about AD Threat Hunting](AD-ThreatHunting/README.md) ⬅️
 
+#### 🔄 MRU (Most Recently Used) Analysis
+A powerful tool for extracting and analyzing Windows Registry MRU entries to reveal user activity patterns and potentially suspicious file access. Provides deep visibility into recently accessed files and applications.
+
+Key Features:
+- 🔍 **Deep Registry Analysis**: Extract MRU data from multiple registry locations
+- 📂 **PIDL Decoding**: Parse complex binary structures for full file paths
+- ⏱️ **Chronological Tracking**: Order events by access time
+- 🎯 **Smart Detection**: Identify suspicious file access patterns
+- 📊 **Multiple Output Formats**: Export findings in various formats
+- 🔄 **Comprehensive Coverage**: Track both files and applications
+
+➡️ [Learn more about MRU Analysis](MRUHunt/README.md) ⬅️
+
+#### 📊 BAM (Background Activity Moderator) Analysis
+A forensics utility that extracts and analyzes Windows BAM data to track application execution history and establish user activity timelines. Essential for incident response and digital forensics.
+
+Key Features:
+- 🕒 **Timeline Analysis**: Track application execution times
+- 👤 **User Activity Mapping**: Correlate actions with users
+- 🔍 **Signature Verification**: Validate process authenticity
+- 📊 **Multiple Export Options**: CSV, JSON, and HTML reports
+- 🎯 **Pattern Detection**: Identify suspicious execution patterns
+- 🔄 **Cross-System Correlation**: Link activities across systems
+
+➡️ [Learn more about BAM Analysis](BAM/README.md) ⬅️
+
+
 ## Project Vision
 
 PowerShell-Hunter will continue to expand with new tools and capabilities focused on Windows-based threat hunting. Planned areas include:
