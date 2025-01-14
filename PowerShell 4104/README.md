@@ -1,6 +1,6 @@
 # PowerShell-Hunter 🎯
 
-<img src="images/logo.png" alt="PowerShell-Hunter Logo" width="400" align="center">
+<img src="../images/logo.png" alt="PowerShell-Hunter Logo" width="400" align="center">
 
 <p align="center">
   <br>
