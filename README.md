@@ -79,6 +79,21 @@ Key Features:
 
 ➡️ [Learn more about PCA Analysis](PCAAnalyzer/README.md) ⬅️
 
+#### 🔎 UserAssist Registry Analysis
+A powerful PowerShell forensic tool designed to extract, decode, and analyze UserAssist registry keys in Windows systems. These keys maintain a record of application executions and user interactions, making them invaluable for digital forensics, incident response, and user activity tracking.
+
+Key Features:
+- 🔍 **ROT13 Decoding**: Automatically decodes obfuscated registry entries
+- 📊 **Execution Tracking**: Reveals application usage patterns and frequency
+- ⏱️ **Timestamp Analysis**: Extracts and converts FILETIME objects to readable dates
+- 📈 **Focus Metrics**: Analyzes application focus time and count data
+- 🔄 **Multiple Export Formats**: HTML, CSV, and JSON reports
+- 🎯 **Anti-Forensics Detection**: Identifies potential tampering with registry artifacts
+- 📱 **Multi-Version Support**: Works across Windows 7, 8, 10, and 11
+
+➡️ [Learn more about UserAssist Analysis](UserAssist/README.md) ⬅️
+
+
 ## Project Vision
 
 PowerShell-Hunter will continue to expand with new tools and capabilities focused on Windows-based threat hunting. Planned areas include:
