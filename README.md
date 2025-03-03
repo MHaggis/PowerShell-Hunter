@@ -66,6 +66,18 @@ Key Features:
 
 ➡️ [Learn more about BAM Analysis](BAM/README.md) ⬅️
 
+#### 🔍 PCA (Program Compatibility Assistant) Analysis
+A PowerShell script that parses and analyzes Program Compatibility Assistant (PCA) logs from Windows systems. This tool helps forensic analysts and threat hunters investigate application execution history and identify potential compatibility issues.
+
+Key Features:
+- 🕒 **Execution History**: Track application execution with accurate timestamps
+- 🚨 **Event Detection**: Identify process events and abnormal program exits
+- 📊 **Multiple Export Options**: HTML, CSV, and JSON reports
+- 📈 **Summary Statistics**: Quick overview of PCA activity
+- 🔄 **Interactive Reports**: Visually appealing HTML reports with interactive elements
+- 🎯 **Forensic Analysis**: Reconstruct application execution timelines
+
+➡️ [Learn more about PCA Analysis](PCAAnalyzer/README.md) ⬅️
 
 ## Project Vision
 
