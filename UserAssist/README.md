@@ -1,5 +1,13 @@
 # UserAssist Registry Analyzer
 
+<img src="../images/logo.png" alt="PowerShell-Hunter Logo" width="400" align="center">
+
+<p align="center">
+  <br>
+  <em>Hunt smarter, hunt harder</em>
+</p>
+
+
 ## Overview
 
 The UserAssist Registry Analyzer is a powerful PowerShell forensic tool designed to extract, decode, and analyze UserAssist registry keys in Windows systems. These keys maintain a record of application executions and user interactions, making them invaluable for digital forensics, incident response, and user activity tracking.
@@ -156,6 +164,11 @@ This tool is designed to aid in forensic analysis by extracting and presenting U
 
 ## References and Further Reading
 
-- [SANS: Windows UserAssist Keys in Forensic Analysis](https://www.sans.org/blog/forensic-analysis-using-the-userassist-registry-keys/)
-- [Microsoft Documentation: Registry Structure](https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry-value-types)
-- [Forensic Focus: UserAssist Keys in Windows Forensics](https://www.forensicfocus.com/articles/userassist-in-windows-forensics/) 
+- https://www.magnetforensics.com/blog/artifact-profile-userassist/
+- https://docs.velociraptor.app/artifact_references/pages/windows.registry.userassist
+
+---
+
+<p align="center">
+Made with ❤️ by defenders for defenders
+</p>
