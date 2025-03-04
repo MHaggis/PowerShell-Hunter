@@ -9,12 +9,14 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![PowerShell](https://img.shields.io/badge/PowerShell-%3E%3D5.1-blue)](https://github.com/PowerShell/PowerShell)
+![PowerShell Hunter](https://img.shields.io/badge/PowerShell-Hunter-blue)
+![HuntSmarter](https://img.shields.io/badge/Hunt_Smarter-Hunt_Harder-critical)
 
 ## About PowerShell-Hunter
 
 PowerShell-Hunter is a growing collection of PowerShell-based threat hunting tools designed to help defenders investigate and detect malicious activity in Windows environments. This project aims to provide security analysts with powerful, flexible tools that leverage PowerShell's native capabilities for threat hunting.
 
-### Current Tools
+### Current Tools - Season 1
 
 #### 🔍 PowerShell 4104 Event Analysis
 PowerShell is both a powerful administrative tool and a favorite weapon for attackers. While its extensive logging capabilities are great for security, the sheer volume of logs can be overwhelming. The PowerShell 4104 Event Analyzer helps defenders cut through the noise and focus on what matters.
@@ -93,6 +95,19 @@ Key Features:
 
 ➡️ [Learn more about UserAssist Analysis](UserAssist/README.md) ⬅️
 
+#### 📁 Prefetch Hunter Analysis
+A sophisticated tool for analyzing Windows Prefetch files to reveal program execution history, identify potentially malicious binaries, and detect suspicious activity patterns. Essential for forensic investigators and threat hunters seeking to understand system usage.
+
+Key Features:
+- 🔍 **Execution Timeline**: Track when and how often programs were executed
+- 🦠 **LOLBAS Integration**: Identify Living Off The Land binaries that attackers might abuse
+- ⏰ **Time Pattern Analysis**: Detect unusual off-hours and weekend activity
+- 📊 **Statistical Detection**: Find execution frequency outliers and anomalies
+- 📈 **Interactive Reports**: Beautiful HTML reports with charts and visualizations
+- 🏷️ **Smart Categorization**: Classify findings by type (Security Tool, System Utility, etc.)
+- 🔄 **Multiple Export Options**: HTML, CSV, and JSON output formats
+
+➡️ [Learn more about Prefetch Hunter](PrefetchHunter/README.md) ⬅️
 
 ## Project Vision
 
