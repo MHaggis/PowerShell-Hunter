@@ -13,7 +13,10 @@ param(
     [switch]$ExecutedInLast24Hours,
     
     [Parameter(Mandatory=$false)]
-    [int]$TopExecuted = 0
+    [int]$TopExecuted = 0,
+    
+    [Parameter(Mandatory=$false)]
+    [switch]$ReturnHtmlContent
 )
 
 <#
@@ -38,6 +41,9 @@ param(
 
 .PARAMETER TopExecuted
     If specified, only shows the top N most executed programs. Default is 0 (show all).
+
+.PARAMETER ReturnHtmlContent
+    If specified, the function will return the HTML content instead of writing to file.
 
 .NOTES
     File Name      : Prefetch_Hunter.ps1
@@ -87,7 +93,6 @@ if (-not (Test-Administrator)) {
     exit
 }
 
-# parse prefetch files
 function Parse-PrefetchFiles {
     param(
         [string]$PrefetchPath,
@@ -408,7 +413,8 @@ function Create-HtmlReport {
     param(
         [array]$PrefetchData,
         [array]$NotableData,
-        [string]$HtmlPath
+        [string]$HtmlPath,
+        [switch]$ReturnContent = $false
     )
     
     $Css = @"
@@ -839,6 +845,10 @@ function Create-HtmlReport {
 "@
 
     $HtmlContent | Out-File -FilePath $HtmlPath
+    
+    if ($ReturnContent) {
+        return $HtmlContent
+    }
 }
 
 function Export-ResultsToFormats {
@@ -846,7 +856,8 @@ function Export-ResultsToFormats {
         [array]$PrefetchData,
         [array]$NotableData,
         [string]$ExportFormat,
-        [string]$BasePath
+        [string]$BasePath,
+        [switch]$ReturnHtmlContent = $false
     )
     
     $Timestamp = Get-Date -Format 'yyyyMMdd_HHmmss'
@@ -867,10 +878,15 @@ function Export-ResultsToFormats {
         }
         
         if ($ExportFormat -eq "HTML" -or $ExportFormat -eq "ALL") {
-            Create-HtmlReport -PrefetchData $PrefetchData -NotableData $NotableData -HtmlPath $HtmlPath
-            Write-Host "HTML report generated: $HtmlPath" -ForegroundColor Green
-            
-            return $HtmlPath
+            if ($ReturnHtmlContent) {
+                $htmlContent = Create-HtmlReport -PrefetchData $PrefetchData -NotableData $NotableData -HtmlPath $HtmlPath -ReturnContent
+                Write-Host "HTML content generated (not saved to file)" -ForegroundColor Green
+                return $htmlContent
+            } else {
+                Create-HtmlReport -PrefetchData $PrefetchData -NotableData $NotableData -HtmlPath $HtmlPath
+                Write-Host "HTML report generated: $HtmlPath" -ForegroundColor Green
+                return $HtmlPath
+            }
         }
     } else {
         Write-Host "No data to export." -ForegroundColor Yellow
@@ -888,9 +904,10 @@ if ($prefetchData.Count -gt 0) {
         Write-Host "Found $($notableData.Count) potentially interesting executions!" -ForegroundColor Yellow
     }
     
-    $reportPath = Export-ResultsToFormats -PrefetchData $prefetchData -NotableData $notableData -ExportFormat $ExportFormat -BasePath "PrefetchHunter"
+    $result = Export-ResultsToFormats -PrefetchData $prefetchData -NotableData $notableData -ExportFormat $ExportFormat -BasePath "PrefetchHunter" -ReturnHtmlContent:$ReturnHtmlContent
     
-    if ($reportPath) {
+    if ($result -and -not $ReturnHtmlContent) {
+        $reportPath = $result
         Write-Host "`nAnalysis complete. Open $reportPath to view the full report." -ForegroundColor Green
         
         try {
@@ -898,8 +915,9 @@ if ($prefetchData.Count -gt 0) {
             Invoke-Item $reportPath
         } catch {
             Write-Warning "Unable to automatically open the HTML report: $_"
-            Write-Host "Please open the report manually: $reportPath" -ForegroundColor Yellow
         }
+    } else {
+        return $result
     }
 } else {
     Write-Host "No Prefetch data found to analyze." -ForegroundColor Yellow
