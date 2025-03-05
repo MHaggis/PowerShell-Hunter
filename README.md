@@ -109,6 +109,21 @@ Key Features:
 
 ➡️ [Learn more about Prefetch Hunter](PrefetchHunter/README.md) ⬅️
 
+#### 🗂️ ShellBag Hunter Analysis
+A powerful forensic tool that extracts and analyzes Windows ShellBag data from the registry to reveal user browsing history and folder access patterns, even after deletion. Essential for digital forensics and investigations where user activity reconstruction is critical.
+
+Key Features:
+- 🔎 **Registry Extraction**: Decodes complex binary ShellBag structures from multiple registry locations
+- 🗑️ **Deleted Folder Detection**: Identifies evidence of previously accessed but now-deleted directories
+- ⏱️ **Timestamp Analysis**: Reveals when folders were accessed and modified
+- 👥 **Multi-User Analysis**: Supports analysis across all user profiles on a system
+- 🔍 **Path Hierarchy Reconstruction**: Visualizes complete folder structure and navigation history
+- 📊 **Flexible Filtering**: Filter results by date range, specific paths, or recency
+- 📱 **Windows 11 Support**: Special handling for Windows 11's different artifact storage approach
+- 📈 **Interactive Reports**: Rich HTML reports with visualizations and organized findings
+
+➡️ [Learn more about ShellBag Hunter](ShellBags/README.md) ⬅️
+
 ## Project Vision
 
 PowerShell-Hunter will continue to expand with new tools and capabilities focused on Windows-based threat hunting. Planned areas include:
