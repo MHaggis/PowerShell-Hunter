@@ -1,6 +1,6 @@
 # JumpList Analyzer
 
-<img src="../images/logo.png" alt="PowerShell-Hunter Logo" width="400" align="center">
+<img src="./images/jumpyexplo.png" alt="PowerShell-Hunter Logo" width="400" align="center">
 
 <p align="center">
   <br>
