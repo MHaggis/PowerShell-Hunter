@@ -16,7 +16,24 @@
 
 PowerShell-Hunter is a growing collection of PowerShell-based threat hunting tools designed to help defenders investigate and detect malicious activity in Windows environments. This project aims to provide security analysts with powerful, flexible tools that leverage PowerShell's native capabilities for threat hunting.
 
-### Current Tools - Season 1
+### Season 2
+
+#### 📋 JumpList Analyzer
+A forensic tool for examining Windows Jump List artifacts that reconstructs user activity history and reveals application usage, even recovering deleted entries. Essential for digital forensics and incident response investigations.
+
+Key Features:
+- 🔍 **Comprehensive Metadata Extraction**: Reveals file access timestamps, paths, and command arguments
+- 🗑️ **Memory Carving**: Recovers deleted Jump List entries to uncover hidden evidence
+- ⏱️ **Timeline Analysis**: Filter by date ranges to focus on specific time periods
+- 📊 **Rich Reporting**: Generate detailed HTML, CSV, and JSON reports
+- 🔄 **Correlation**: Link findings with other artifacts like Prefetch and UserAssist
+- 📈 **Interactive HTML Reports**: Collapsible sections with filtering capabilities
+- 🧩 **Modular Design**: Extensible architecture for easy customization and enhancement
+
+➡️ [Learn more about JumpList Analyzer](JumpList/README.md) ⬅️
+
+
+### Season 1
 
 #### 🔍 PowerShell 4104 Event Analysis
 PowerShell is both a powerful administrative tool and a favorite weapon for attackers. While its extensive logging capabilities are great for security, the sheer volume of logs can be overwhelming. The PowerShell 4104 Event Analyzer helps defenders cut through the noise and focus on what matters.
