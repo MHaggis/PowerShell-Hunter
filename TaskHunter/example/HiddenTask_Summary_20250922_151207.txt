@@ -1,0 +1,23 @@
+HIDDEN SCHEDULED TASK HUNT RESULTS
+==================================
+Analysis Time: 09/22/2025 15:12:07
+Total Threats Detected: 39
+
+THREAT BREAKDOWN:
+Critical: 0
+High:     5  
+Medium:   23
+Low:      3
+
+TOP THREATS:
+[MEDIUM] \System.__ComObject_LegitModified on Haager01 - Score: 75
+  └─ Task enabled after creation; Task disabled after creation; Enable/disable toggle pattern detected; Task created but never properly deleted
+[HIGH] TestHiddenTask_1696373998 on Haager01 - Score: 70
+  └─ Direct registry manipulation; Bypassed Task Scheduler APIs
+[HIGH] TestHiddenTask_1696373998_Programmatic on Haager01 - Score: 70
+  └─ Direct registry manipulation; Bypassed Task Scheduler APIs
+[HIGH] TestHiddenTask_1696373998_LegitModified on Haager01 - Score: 70
+  └─ Direct registry manipulation; Bypassed Task Scheduler APIs
+[HIGH] TaskHunter_AutoCleanup_181441916 on Haager01 - Score: 70
+  └─ Direct registry manipulation; Bypassed Task Scheduler APIs
+

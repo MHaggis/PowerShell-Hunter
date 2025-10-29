@@ -18,6 +18,21 @@ PowerShell-Hunter is a growing collection of PowerShell-based threat hunting too
 
 ### Season 2
 
+  #### 🎯 TaskHunter - Hidden Scheduled Task Detection
+A sophisticated tool for detecting Tarrask-style hidden scheduled task abuse and advanced persistence techniques. Correlates multiple event sources including Security logs, Sysmon registry events, and process creation to identify sophisticated scheduled task manipulation.
+
+Key Features:
+- 🔍 **Multi-Source Correlation**: Combines Security logs (4698/4699), Sysmon registry events (13), and process creation (4688)
+- 🕵️ **Tarrask Detection**: Identifies Security Descriptor removal and registry manipulation techniques
+- 📊 **Enhanced Registry Analysis**: Direct registry scanning with multiple hiding technique detection
+- 🧠 **Smart Filtering**: Reduces false positives by excluding legitimate Windows tasks
+- 📈 **Detailed Task Information**: Extracts live task properties including actions, users, and triggers
+- 🔄 **Fallback Mechanisms**: Direct registry query when Sysmon logs are unavailable
+- 📋 **Comprehensive Reporting**: Grouped threat output by severity with detailed evidence
+- 🧪 **Test Framework**: Includes simulation tools for testing detection capabilities
+
+➡️ [Learn more about TaskHunter](TaskHunter/README.md) ⬅️
+
 #### 📋 JumpList Analyzer
 A forensic tool for examining Windows Jump List artifacts that reconstructs user activity history and reveals application usage, even recovering deleted entries. Essential for digital forensics and incident response investigations.
 
